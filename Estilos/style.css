@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Area{
+    background-color: pink;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+div#Login{
+    height: 100%;
+    width: 500px;
+    background-color: orange;
+}
+div#Imagem{
+    background-color: blue;
+    width: 500px;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
