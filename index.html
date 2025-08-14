@@ -10,21 +10,25 @@
 </head>
 <body>
     <main>
-        <div class="Area">
-            <div id="Login">
-                <form action="login.php" method="post">
-                    <label for="User">Usuário:</label>
-                    <input type="text" maxlength="20" minlength="6" required>
-                    <label for="Password">Senha:</label>
-                    <input type="password" maxlength="8" minlength="4" required>
-                    <a href="#">Esqueceu a Senha</a>
-                    <button type="submit">Entrar</button>
-                </form>
-            </div>
+        <div id="Login">
             <div id="Imagem">
-
             </div>
-        </div>
+                <div id="Formulario">
+                    <h1>Login</h1>
+                    <form action="login.php" method="post">
+                        <div class="Campo">
+                            <label id="us" for="User">Usuário:</label>
+                            <input type="text" maxlength="20" minlength="6" required>
+                        </div>
+                        <div class="Campo">
+                            <label id="us" for="Password">Senha:</label>
+                            <input type="password" maxlength="8" minlength="4" required>
+                        </div>
+                        <a href="#">Esqueceu a Senha</a> <br>
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+            </div>
     </main>
 </body>
 </html>

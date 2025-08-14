@@ -1,34 +1,68 @@
 @charset "UTF-8";
-@media screen and (max-width: 768px) {
-    main{
-        background-color: brown;
-    }
-    .Area{
-        background-color: aquamarine;
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        width: 65vw;
-        height: 80%;
-        margin-left: 10px;
-    }
+/*========================ADAPTAÇÂO PARA CELULAR========================*/
+
+@media screen and (max-width: 768px) { 
     div#Login{
-        height: 70%;
-        width: 100%;
-        background-color: chartreuse;
+        left: 51%;
+        width: 70%;
+        height: 80%;
     }
     div#Imagem{
-        background-color: blue;
+        height: 30%;
         width: 100%;
-        height: 35%;
+
     }
-    form{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 55%;
-        left: 40%;
-        transform: translate(-50%,-50%);
+    div#Login>div#Formulario{
+        display: block;
+        height: 70%;
+        width: 100%;
+        float: top;
+    }
+    div#Formulario>form>button{
+        margin-top: 20px;
+        margin-left: 12px;
+
+        width: 95%;
+        
+        transition: margin-top 0s , background-color 0s;
+    }
+    div#Formulario>form>button:hover{
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.94);
+
+        
+    }
+    .Campo{
+        margin-top: -10px;
+
+    }
+    .Campo>label#us{
+        font-size: 2em;
+    }
+    .Campo>input{
+        width: 95%;
+        height: 40px;
+    }
+    a{
+        margin-left: 0%;
+        font-size: 20px;
+    }
 }
-   
+/*========================ADAPTAÇÂO PARA TABLET========================*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+    div#Login{
+        width: 90%;
+    }
+    div#Login>div#Formulario{
+        float: right;
+    }
+
+    div#Imagem{
+        float: left;
+    }
+    a{
+        margin-left: 0%;
+    }
+    
 }
